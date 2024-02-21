@@ -1,15 +1,12 @@
 package frc.robot.subsystems;
 
-import edu.wpi.first.util.sendable.SendableRegistry;
-import edu.wpi.first.cameraserver.CameraServer;
-import edu.wpi.first.util.sendable.SendableRegistry;
-import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.XboxController;
-import edu.wpi.first.wpilibj.TimedRobot;
-import edu.wpi.first.wpilibj.drive.MecanumDrive;
 import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 
-public class Drivetrain {
+import edu.wpi.first.util.sendable.SendableRegistry;
+import edu.wpi.first.wpilibj.drive.MecanumDrive;
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
+
+public class Drivetrain  extends SubsystemBase {
 
     private MecanumDrive m_robotDrive;
 

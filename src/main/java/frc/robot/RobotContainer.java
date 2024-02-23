@@ -14,6 +14,8 @@ import frc.robot.commands.AutonomousTime;
 import frc.robot.commands.Autos;
 import frc.robot.commands.Drive;
 import frc.robot.commands.ExampleCommand;
+import frc.robot.subsystems.ArmSubsystem;
+import frc.robot.subsystems.CarrierSubsystem;
 import frc.robot.subsystems.Drivetrain;
 import frc.robot.subsystems.ExampleSubsystem;
 
@@ -30,6 +32,10 @@ public class RobotContainer {
   private final Drivetrain m_drivetrain = new Drivetrain();
 
    private final SendableChooser<Command> m_chooser = new SendableChooser<>();
+
+   private final CarrierSubsystem m_CarrierSubsystem = new CarrierSubsystem();
+
+   private final ArmSubsystem m_ArmSubsystem = new ArmSubsystem();
 
   // Replace with CommandPS4Controller or CommandJoystick if needed
   private final CommandXboxController m_driverController =
